@@ -14,10 +14,7 @@
 //hasDuplicate
 
 const hasDuplicate = (arr) => {
-  if (arr !== [...new Set(arr)]){
-    return true;
-  }
-  return false;
+  return new Set(arr).size !== arr.length;
 }
 
 //vowelCount
